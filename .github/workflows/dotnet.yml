@@ -47,6 +47,6 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/dotnet:${{TAG_REF}}
+        tags: ${{ secrets.DOCKER_USERNAME }}/dotnet:${{GITHUB_JOB}}
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
