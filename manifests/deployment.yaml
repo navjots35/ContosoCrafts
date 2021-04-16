@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.podinfod: glob:*
+    fluxcd.io/tag.podinfod: glob:v*
   name: contoso
   namespace: default
   labels:
@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: contoso
-        image: navjots35/dotnet:latest
+        image: navjots35/dotnet:v2
         ports:
         - containerPort: 80
