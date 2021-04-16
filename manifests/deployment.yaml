@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.podinfod: glob:v*
+    fluxcd.io/tag.podinfod: glob:*
   name:  contoso
   namespace: default
   labels:
