@@ -1,13 +1,14 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
     fluxcd.io/automated: "true"
     fluxcd.io/tag.podinfod: glob:*
-  name:  contoso
+  name: contoso
   namespace: default
   labels:
-    app:  contoso
+    app: contoso
 spec:
   selector:
     matchLabels:
@@ -21,10 +22,10 @@ spec:
   template:
     metadata:
       labels:
-        app:  contoso
+        app: contoso
     spec:
       containers:
-      - name:  contoso
-        image:  navjots35/dotnet:latest
+      - name: contoso
+        image: navjots35/dotnet:v1
         ports:
-        - containerPort:  80
+        - containerPort: 80
