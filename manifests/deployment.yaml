@@ -3,8 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    fluxcd.io/automated: "true"
-    fluxcd.io/tag.podinfod: glob:v*
+    'consul.hashicorp.com/connect-inject': 'true'
   name: contoso
   namespace: default
   labels:
