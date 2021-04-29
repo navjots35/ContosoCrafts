@@ -25,6 +25,6 @@ spec:
     spec:
       containers:
       - name: contoso
-        image: navjots35/dotnet:795383820
+        image: navjots35/dotnet:795389524
         ports:
         - containerPort: 80
